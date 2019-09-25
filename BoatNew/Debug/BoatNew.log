@@ -1,0 +1,4 @@
+﻿  tileMap.cpp
+c:\users\owner\source\repos\boatnew\boatnew\tilemap.cpp(19): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\owner\source\repos\boatnew\boatnew\tilemap.cpp(46): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  BoatNew.vcxproj -> C:\Users\Owner\source\repos\BoatNew\Debug\BoatNew.exe

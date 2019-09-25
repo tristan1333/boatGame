@@ -1,0 +1,3 @@
+//include all lua files here, only the first line is ignored. TILE.LUA MUST BE FIRST
+tile.lua
+EmptyTile.lua

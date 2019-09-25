@@ -1,0 +1,4 @@
+//Insert Lua Load script locations here, update later. FIRST, loadTile.blf, THEN Player Scripts
+Scripts/Tiles/loadTile.blf
+Scripts/Player/loadPlayer.blf
+Scripts/Map/loadMap.blf

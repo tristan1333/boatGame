@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\LUA">
+      <UniqueIdentifier>{9547a539-12a0-4c57-97dd-2ef5e2a91471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LuaFuncs">
+      <UniqueIdentifier>{4bdceb51-a879-469e-97bf-c7887db92a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resolutions">
+      <UniqueIdentifier>{d1ab596f-4e1b-438e-a817-32fd5fa789ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MapMaking">
+      <UniqueIdentifier>{a7f16076-3113-4dae-bc4e-3b4d99dde97c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MainMenu">
+      <UniqueIdentifier>{552c6554-7093-4d5c-979d-7ab2aa8f594e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Events">
+      <UniqueIdentifier>{ad84a537-caf2-471b-858b-0dd048bb1d18}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\llex.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\llimits.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lmem.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lobject.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lopcodes.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lparser.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lstate.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lstring.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\ltable.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\ltm.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lua.hpp">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\luaconf.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lualib.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lundump.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lvm.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lzio.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lapi.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lauxlib.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lcode.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lctype.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\ldebug.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\ldo.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lfunc.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\lua-5.2.4\include\lgc.h">
+      <Filter>Source Files\LUA</Filter>
+    </ClInclude>
+    <ClInclude Include="luaFuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emptyTile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fps_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hitbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="load_textures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="savlod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="renderWrld.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tileMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="timers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vectors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resolutions.h">
+      <Filter>Source Files\Resolutions</Filter>
+    </ClInclude>
+    <ClInclude Include="mapmaking.h">
+      <Filter>Source Files\MapMaking</Filter>
+    </ClInclude>
+    <ClInclude Include="mainmenu.h">
+      <Filter>Source Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="events.h">
+      <Filter>Source Files\Events</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\linit.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\liolib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\llex.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lmathlib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lmem.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\loadlib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lobject.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lopcodes.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\loslib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lparser.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lstate.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lstring.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lstrlib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ltable.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ltablib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ltm.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lundump.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lvm.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lzio.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lapi.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lauxlib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lbaselib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lbitlib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lcode.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lcorolib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lctype.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ldblib.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ldebug.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ldo.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\ldump.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lfunc.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\lua-5.2.4\include\lgc.c">
+      <Filter>Source Files\LUA</Filter>
+    </ClCompile>
+    <ClCompile Include="luaFuncs.cpp">
+      <Filter>Source Files\LuaFuncs</Filter>
+    </ClCompile>
+    <ClCompile Include="gameHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hitbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="load_textures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platforms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="renderWrld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="savlod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tileMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tiles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="timers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vectors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resolutions.cpp">
+      <Filter>Source Files\Resolutions</Filter>
+    </ClCompile>
+    <ClCompile Include="mapMaking.cpp">
+      <Filter>Source Files\MapMaking</Filter>
+    </ClCompile>
+    <ClCompile Include="mainmenu.cpp">
+      <Filter>Source Files\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="events.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\lua-5.2.4\include\Makefile">
+      <Filter>Source Files\LUA</Filter>
+    </None>
+  </ItemGroup>
+</Project>

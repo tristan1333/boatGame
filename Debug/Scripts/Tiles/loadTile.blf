@@ -1,0 +1,5 @@
+//include all lua files here, only the first line is ignored. Make sure postLoad is last
+Scripts/Tiles/EmptyTile.lua
+Scripts/Tiles/floorTile.lua
+Scripts/Tiles/wall.lua
+Scripts/Tiles/postLoad.lua
