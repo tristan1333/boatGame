@@ -79,8 +79,8 @@ bool init(resHandler *res) //Starts up the SDL library and makes sure everything
         printf("Failed to init");
         success = false;
     } else {
-        mainwin = SDL_CreateWindow("Project", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, res->w * res->resMod,
-                                   res->h * res->resMod, SDL_WINDOW_SHOWN);
+        mainwin = SDL_CreateWindow("Project", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, res->w,
+                                   res->h, SDL_WINDOW_SHOWN);
         if (mainwin == NULL) {
             success = false;
         } else {
