@@ -5,18 +5,18 @@ right = 0
 down = 1
 left = 2
 up = 3
-function wallTile:onEnter(x, y, dir) --lx/ly = player absolute floats, x/y = tile coords
+function wallTile:onEnter(x, y, lx, ly, dir) --lx/ly = player absolute floats, x/y = tile coords
     if dir == right then --left
-        player.x = x - 0.53
+        player.x = x - (player.w + 0.001)
     end
     if dir == left then --right
-        player.x = x + 1.03
+        player.x = x + 1.0001
     end
     if dir == up then --bottom
-        player.y = y + 1.03
+        player.y = y + 1.0001
     end
     if dir == down then --top
-        player.y = y - 0.53
+        player.y = y - (player.h + 0.001)
     end
 end
 
