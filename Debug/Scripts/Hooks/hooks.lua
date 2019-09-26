@@ -45,5 +45,6 @@ end
 
 function clickUpdates:Handle()
 	for o in clickUpdates.events do
-		
+		tiles[map:getTile(math.floor(o.x),math.floor(o.y))]:onClick()
+	end
 end
