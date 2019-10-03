@@ -45,7 +45,6 @@ end
 
 function clickUpdates:handle()
     for o,v in pairs(clickUpdates.events) do
-		prnt("Went to loop in clickUpdates")
 		tiles.reg[map:getTile(math.floor(v.x), math.floor(v.y))]:onClick(v.x,v.y)
     end
 	clickUpdates.events = {}

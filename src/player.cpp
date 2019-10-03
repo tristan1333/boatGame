@@ -106,7 +106,6 @@ void player::handle(const Uint8 *key, tilemap *mp, LuaContext *L, camera* mainca
 			float ny = mousey;
 			SDL_Point p = { mousex, mousey };
 			convertToWorld(nx, ny, maincam);
-			std::cout << "Player clicked " << nx << "/" << ny;
 			std::string execCode = std::string(
 				"clickUpdates:Add(" + std::to_string(nx) + ", " + std::to_string(ny) + ")");
 			L->executeCode(execCode);
