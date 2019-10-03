@@ -5,6 +5,8 @@
 
 class Vec2;
 
+class camera;
+
 class tilemap;
 
 class LuaContext;
@@ -27,7 +29,7 @@ public:
 
     float grabHitBoxTop();
 
-    void handle(const Uint8 *, tilemap *, LuaContext *);
+    void handle(const Uint8 *, tilemap *, LuaContext *, camera*);
 
     void move(float, float, tilemap *, LuaContext *);
 

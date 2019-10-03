@@ -31,4 +31,16 @@ function wallTileTwo:onEnter(x, y, lx, ly, dir)
     map:changeTile(x + 1, y, "caveFloor")
 end
 
+function wallTileTwo:onClick(x,y)
+	if player:inRange(x,y) then
+	map:changeTile(x+1,y,"walltwo")
+	map:changeTile(x-1,y,"walltwo")
+	map:changeTile(x-1,y-1,"walltwo")
+	map:changeTile(x-1,y+1,"walltwo")
+	map:changeTile(x+1,y-1,"walltwo")
+	map:changeTile(x+1,y+1,"walltwo")
+	map:changeTile(x,y,"caveFloor")
+	end
+end
+
 tiles:register(wallTileTwo)

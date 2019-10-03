@@ -43,8 +43,11 @@ function clickUpdates:Add(cx, cy)
     clickUpdates.size = clickUpdates.size + 1
 end
 
-function clickUpdates:Handle()
-    for o in clickUpdates.events do
-        tiles[map:getTile(math.floor(o.x), math.floor(o.y))]:onClick()
+function clickUpdates:handle()
+    for o,v in pairs(clickUpdates.events) do
+		prnt("Went to loop in clickUpdates")
+		tiles.reg[map:getTile(math.floor(v.x), math.floor(v.y))]:onClick(v.x,v.y)
     end
+	clickUpdates.events = {}
+	clickUpdates.size = 0
 end

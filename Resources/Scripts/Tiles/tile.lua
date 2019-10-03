@@ -29,7 +29,7 @@ end
 function tile:onEnter(x, y, lx, ly)
 end
 
-function tile:onClick()
+function tile:onClick(x,y)
 end
 
 function tile:create(p)
