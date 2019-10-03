@@ -1,6 +1,6 @@
+#include "camera.h"
 #include "player.h"
 #include "load_textures.h"
-#include "vectors.h"
 #include "tiles.h"
 #include "tileMap.h"
 #include "hitbox.h"
@@ -94,7 +94,23 @@ void player::move(float xmv, float ymv, tilemap *mp, LuaContext *L) {
     this->pos->y = L->readVariable<float>("player", "y");
 }
 
-void player::handle(const Uint8 *key, tilemap *mp, LuaContext *L) {
+void player::handle(const Uint8 *key, tilemap *mp, LuaContext *L, camera* maincam) {
+	SDL_Event e;
+	while (SDL_PollEvent(&e) != 0)
+	{
+		if (e.type == SDL_MOUSEBUTTONDOWN) {
+			int mousex, mousey;
+			int screenw, screenh;
+			SDL_GetMouseState(&mousex, &mousey);
+			float nx = mousex;
+			float ny = mousey;
+			SDL_Point p = { mousex, mousey };
+			convertToWorld(nx, ny, maincam);
+			std::string execCode = std::string(
+				"clickUpdates:Add(" + std::to_string(nx) + ", " + std::to_string(ny) + ")");
+			L->executeCode(execCode);
+		}
+	}
     if (key[SDL_SCANCODE_D]) {
 
         this->move(mv_speed, 0, mp, L);

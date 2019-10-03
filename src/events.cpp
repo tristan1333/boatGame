@@ -30,4 +30,5 @@ void eventHandler::handle(LuaContext *L, tilemap *mp) {
     }
     L->executeCode("printUpdates:finish()");
     L->executeCode("tileUpdates:finish()");
+	L->executeCode("clickUpdates:handle()");
 }
