@@ -13,8 +13,32 @@
 #include <unordered_map>
 #include "LuaContext.hpp"
 #include "load_textures.h"
-
+#include <filesystem>
 std::unordered_map<std::string, SDL_Texture *> tex;
+
+
+void new_load_luafiles(LuaContext *L)
+{
+	std::string path = "Packages";
+	for (const auto & entry : std::filesystem::directory_iterator(path))
+	{
+		if (std::filesystem::is_directory(entry))
+		{
+			for (const auto & subFolder : std::filesystem::directory_iterator(entry.path()))
+			{
+				std::cout << subFolder.path().u8string() << " is being loaded!" << std::endl;
+				for (const auto & luaScripts : std::filesystem::directory_iterator(subFolder.path()))
+				{
+					std::cout << luaScripts.path().u8string() << std::endl;
+					std::ifstream loadLuaFile;
+					loadLuaFile.open(luaScripts.path().u8string());
+					L->executeCode(loadLuaFile);
+					std::cout << "Executed " << luaScripts.path() << std::endl;
+				}
+			}
+		}
+	}
+}
 
 void load_lua_textures(LuaContext *L) {
     int numOreg = L->readVariable<int>("o_til_reg_n");
@@ -111,18 +135,19 @@ void load_tiles(std::string tileFile) {
 bool init_lua(LuaContext *L) {
     std::string tileFile = std::string("");
 //	L->registerFunction("tile_type", &tile_type::create);
-    std::ifstream file;
-    file.open("Scripts/Tiles/tile.lua");
-    L->executeCode(file);
-    file.close();
+   // std::ifstream file;
+  //  file.open("Scripts/Tiles/tile.lua");
+  //  L->executeCode(file);
+  //  file.close();
     //std::cout << L->readVariable<std::string>("tile", "id");
-    load_lua_files(tileFile, L);
-    load_lua_textures(L);
-    std::cout << "Finished loading tiles!" << std::endl;
+	// load_lua_files(tileFile, L);
+   // std::cout << "Finished loading tiles!" << std::endl;
     //std::count << L->readVariable<std::string>()
 //	std::cout << "Bruh";
     //L->executeCode("emptyTile:change()");
     //load_tiles(tileFile);
+	new_load_luafiles(L);
+	load_lua_textures(L);
     return true;
 }
 

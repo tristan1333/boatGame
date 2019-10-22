@@ -1,4 +1,3 @@
-
 #include "SDL.h"
 #include "fps_handler.h"
 #include "SDL_image.h"
@@ -19,6 +18,7 @@
 #include "resolutions.h"
 #include "player.h"
 #include "events.h"
+#include "animSets.h"
 
 #define MENU 1
 #define GAME 2
