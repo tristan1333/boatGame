@@ -1,5 +1,4 @@
 #include "load_textures.h"
-#include "platform.h"
 #include "map.h"
 #include "vectors.h"
 #include <fstream>
@@ -29,7 +28,7 @@ int numbifyint(std::string str) {
     return strtol(str.c_str(), 0, 10);
 }
 
-bool loadMap(map *mp) {
+/*bool loadMap(map *mp) {
     //set_pieces.clear();
     std::ifstream file;
     file.open("MAP.vmf");
@@ -98,4 +97,4 @@ bool loadMap(map *mp) {
             return true;
         }
     }
-}
+}*/
